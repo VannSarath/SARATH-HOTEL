@@ -1,0 +1,464 @@
+.Header{
+    height: 100px;
+    background-color: rgb(242, 240, 238);
+}
+.logo{
+    width: 40%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.menu{
+    width: 40%;
+    height: 100%;
+    float: left;
+} 
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    float: right;
+}
+.menu ul li a{
+    display: block;
+    padding: 36px 20px ;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+.search{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .fa-regular{
+    font-size: 15px;
+    color: black;
+    margin-right: 20px;
+}
+.search .fa-bars-staggered{
+    display: none;
+}
+.title-shipping{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+.box-item{
+    width: 50%;
+    height: 150px;
+    /* background-color: yellow; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.box-item .item{
+    width: 19%;
+    height: 100%;
+    /* background-color: green; */
+    
+}
+.fa-truck{
+    font-size: 40px;
+    color: rgb(210, 134, 134);
+}
+.item .icon{
+    width: 100%;
+    height:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.item .icon img{
+    width: 50px;
+    height: 50px;
+}
+.item a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(117, 100, 100);
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    margin-top: 4px;
+    justify-content: center;
+}
+.item a:hover{
+    text-decoration: underline;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  
+    .menu{
+        width: 100%;
+        position: absolute;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.462);
+        transform: translateY(100px);
+        z-index: 1;
+        display: none;
+       
+    }
+    .logo {
+        width: 70%;
+    }
+    .menu ul li {
+        float:none;
+    }
+    .menu ul li a{
+        padding: 20px 10px;
+        color: white;
+    }
+    .search{
+        width: 30%;
+    }
+    .search  .fa-bars-staggered{
+        display: block;
+        margin-left: 10px;
+    }
+    .box-item{
+        width: 100%;
+    }
+}
+
+.VEHICLES-container{
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    /* background-color: black; */
+    margin-top: 50px;
+}
+.Header-title{
+    width: 100%;
+    height: 90px;
+    /* background-color: red; */
+
+}
+.Header-title h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.VEHICLES{
+    width: 100%;
+    overflow: hidden;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.VEHICLES .box-vihecle{
+    width: 33%;
+    height: 380px;
+    /* background-color: violet; */
+}
+.VEHICLES .box-vihecle .picture{
+    width: 100%;
+    height: 60%;
+
+}
+.VEHICLES .box-vihecle .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.VEHICLES .box-vihecle .description{
+    width: 100%;
+    height: 40%;
+
+}
+.VEHICLES .box-vihecle .description h3{
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.VEHICLES .box-vihecle .description button{
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight:500;
+    height: 50px;
+    border: 3px solid black;
+    background-color: white;
+    transform: translate(160px, 10px);
+}
+.VEHICLES .box-vihecle .description button:hover{
+    background-color: black;
+    color: white;
+}
+.VEHICLES hr{
+    margin-top: 30px;
+}
+@media (max-width: 575.98px) {
+   
+    .VEHICLES .box-vihecle{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+        float: left;
+    }
+    .VEHICLES .box-vihecle .description button{
+        transform: translate(110px, 10px);
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .VEHICLES .box-vihecle{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+        float: left;
+    }
+    .VEHICLES .box-vihecle .description button{
+        transform: translate(300px, 10px);
+    }
+}
+
+.explore-your-lexus{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('images/r1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+.explore-your-lexus .left-box{
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.explore-your-lexus .right-box{
+    width: 70%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.explore-your-lexus .right-box img{
+    width: 120%;
+    height: auto;
+    position: absolute;
+    bottom: -400px;
+    right: -50px;
+    transform: translateY(50px);
+    transition: transform 0.5s ease;
+}
+.explore-your-lexus .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.explore-your-lexus .model {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.explore-your-lexus .description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.explore-your-lexus .cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+.explore-your-lexus button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.explore-your-lexus .explore-btn {
+    background-color: white;
+    color: black;
+}
+.explore-your-lexus .build-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.explore-your-lexus button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 575.98px) {
+    .explore-your-lexus .left-box .description{
+        display:none;
+    }
+    .explore-your-lexus .right-box img{
+        width: 100%;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+.container-700h{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.container-700h .box-700h{
+    width: 100%;
+    height: 100px;
+    /* background-color: bisque; */
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.container-700h .box-700h-image{
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('images/r2.jpg');
+}
+.box-700h-button{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-700h-button .btn-700h{
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight:500;
+    height: 50px;
+    border: 3px solid black;
+    background-color: white;
+}
+.box-700h-button .btn-700h:hover{
+    background-color: black;
+    color: white;
+}
+.LIMITED-container{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.LIMITED-container .header-title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+.LIMITED-container .header-title h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+.container-box-feature{
+    width: 100%;
+    height: 540px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+.boxitem{
+    width: 33%;
+    height: 100%;
+    background-color: green;
+    overflow: hidden;
+}
+.boxitem:nth-child(2) .top{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    overflow: hidden;
+}
+.boxitem:nth-child(2) .bottom{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    overflow: hidden;
+}
+.boxitem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+.boxitem img:hover{
+    transform: scale(110%,110%);
+    z-index: 1;
+}
+.boxitem h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 2;
+    color: white;
+    transform: translate(80px,400px);
+}
+.boxitem .btn-lern-more{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+    position: absolute;
+    z-index: 2;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transform: translate(190px,450px);
+}
+
+.boxitem:hover .btn-lern-more{
+    background-color: transparent;
+}
+
+@media (max-width: 575.98px) {
+    .container-box-feature{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .boxitem{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
